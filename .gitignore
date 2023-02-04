@@ -1,0 +1,7 @@
+
+# Ide Folders
+.idea/
+.vscode/
+
+# Java Compiled Stuff
+out/
