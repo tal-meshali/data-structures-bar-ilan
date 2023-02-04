@@ -8,11 +8,11 @@ public class Layer {
         this.depth = 0;
     }
 
-    public DoubleLinkedList getMembers(){
+    public DoubleLinkedList getMembers() {
         return members;
     }
 
-    public Node getFather(){
+    public Node getFather() {
         return father;
     }
 
@@ -37,11 +37,11 @@ public class Layer {
     }
 
     public void add(int key) {
-        this.members.addNode(new Node(key,this));
+        this.members.addNode(new Node(key, this));
     }
 
 
-    public void updateDepth(){
+    public void updateDepth() {
         this.depth += 1;
 
     }

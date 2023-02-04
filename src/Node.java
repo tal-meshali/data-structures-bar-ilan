@@ -108,11 +108,11 @@ public class Node {
         return children;
     }
 
-    public void removeChildren(){
+    public void removeChildren() {
         this.children = null;
     }
 
-    public void removeFamily(){
+    public void removeFamily() {
         this.family = null;
     }
 
@@ -138,7 +138,7 @@ public class Node {
         return x2;
     }
 
-    public boolean isMarked(){
+    public boolean isMarked() {
         return marked;
     }
 }

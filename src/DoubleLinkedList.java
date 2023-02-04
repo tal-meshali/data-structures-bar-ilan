@@ -1,4 +1,3 @@
-
 public class DoubleLinkedList {
     private Node min;
     private Node first;
@@ -34,34 +33,37 @@ public class DoubleLinkedList {
         System.out.println(temp.getKey());
     }
 
-    public Node getFirst(){
+    public Node getFirst() {
         return first;
     }
 
-    public void setFirst(Node node){
-        this.first=node;
+    public void setFirst(Node node) {
+        this.first = node;
     }
 
     public int getMin() {
         return min.getKey();
     }
 
-    public void setMin(Node node){
-        this.min=node;
+    public void setMin(Node node) {
+        this.min = node;
     }
 
     public void moveMin() {
         min = min.getPrevious();
         min.getNext().exterminate();
     }
-    public Node getLast(){ return min; }
+
+    public Node getLast() {
+        return min;
+    }
 
     public DoubleLinkedList merge(DoubleLinkedList other) {
         if (this.getMin() > other.getMin()) {
             other.first.setPrevious(this.min);
             this.min.setNext(other.first);
             other.first = this.first;
-            other.layer=this.layer;
+            other.layer = this.layer;
             return other;
         } else {
             this.first.setPrevious(other.min);
@@ -71,8 +73,8 @@ public class DoubleLinkedList {
         }
     }
 
-    public void pushToEnd(Node temp){
-        if (temp.equals(first)){
+    public void pushToEnd(Node temp) {
+        if (temp.equals(first)) {
             first = first.getNext();
         }
         temp.exterminate();
@@ -81,7 +83,7 @@ public class DoubleLinkedList {
         min = temp;
     }
 
-    public void pushToStart(Node temp){
+    public void pushToStart(Node temp) {
         if (temp.equals(min)) {
             min = min.getPrevious();
         }
