@@ -1,4 +1,4 @@
-import python.Graph
+import Python.Graph
 
 
 class UnionFindNode(object):
@@ -74,10 +74,10 @@ def Kruskal_MST(graph):
 
 
 def main():
-    graph = python.Graph.Graph()
+    graph = Python.Graph.Graph()
     V = []
     for i in range(10):
-        V.append(python.Graph.Vertex(i, graph))
+        V.append(Python.Graph.Vertex(i, graph))
     V[0].connect([V[1], V[2], V[3]], [5, 3, 4])
     V[1].connect(V[6], 1)
     V[5].connect([V[2], V[3]], [7, 1])
