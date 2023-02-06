@@ -1,7 +1,21 @@
 # data-structures-bar-ilan
 
-Implementation of every algorithm featured in Bar Ilan's DSAA course.
+<p>On a quest to program every algorithm and database learnt on DSAA course. </p>
+The project already includes the following:
 
-## Thanks
+#### <u> Databases: </u>
+- Union Find
+- Fibonacci Heap
+- Node-connected Graph
 
-I'd like thank MA BIG CHUG JUGG.
+#### <u> Algorithms: </u>
+- String searching algorithm (KMP, BM)
+- Kruskal's algorithm for MST finding
+- Various dynamic programming applications (such as LCS, LIS, SCS...)
+
+#### <u> Work in progress: </u>
+- Djikstra's algorithm for shortest distances
+- Floyd-Warshal algorithm for maximum flow
+- Prim's algorithm for MST finding
+- Linear programming (Simplex and Dual Simplex)
+- Ukkonen's algorithm for finding suffix tress
