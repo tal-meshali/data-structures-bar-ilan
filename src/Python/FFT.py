@@ -23,5 +23,5 @@ def FFT(a):
     return runner_FFT(a + [0] * (n - k))
 
 
-arr = [1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]
+arr = [1,1,1,1,0,0,0,0]
 print(FFT(arr))

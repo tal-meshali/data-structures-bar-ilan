@@ -47,7 +47,8 @@ class BoyerMoore:
         alphabet = list(set([S[i] for i in range(len(S))]))
         BCT = self.bad_character_rule(S, alphabet)
         GST, H = self.good_suffix_rule(S)
-        print(BCT)
+        for i in BCT:
+            print(i)
         print(GST)
         print(H)
 
@@ -82,4 +83,4 @@ class BoyerMoore:
         return matches
 
 
-print(BoyerMoore().string_search("banana", "nananabanananonaoninabanananoniananodfinabananaopidbananbanananananonibananoninabanana"))
+print(BoyerMoore().string_search("XYXXYZXYXX", "XYXXYZYXYZTXXXXYYZXXYZXXXXYXXYZXYXXYXX"))
